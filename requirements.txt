@@ -1,0 +1,19 @@
+django>=3.1.0, <3.2.0
+django-widget-tweaks>=1.4.8, <1.5.0
+django-registration>=3.2.0, <3.3.0
+djangorestframework>=3.12.0, <3.13.0
+djoser>=2.1.0, <2.2.0
+django-cleanup
+Pillow
+face_recognition
+psycopg2-binary
+python-dotenv
+django-cors-headers
+
+requests
+pyttsx3
+opencv-python
+
+gunicorn
+whitenoise
+dj-database-url
