@@ -12,24 +12,24 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__fil
 SECRET_KEY = 'jtnwb)m+7bj7g*9z0((1i8!quf^acnxj0$95%62)aoj3ps+h3a'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 try:
     from .local_settings import *
 except ImportError:
     pass
 
-if DEBUG:
-    ALLOWED_HOSTS = ['*']
-else:
-    import environ
-    env = environ.Env()
-    env.read_env(os.path.join(BASE_DIR, '.env'))
+# if DEBUG:
+#     ALLOWED_HOSTS = ['*']
+# else:
+#     import environ
+#     env = environ.Env()
+#     env.read_env(os.path.join(BASE_DIR, '.env'))
 
-    SECRET_KEY = env('SECRET_KEY')
-    ALLOWED_HOSTS = env.list('ALLOWED_HOSTS')
-    STATIC_ROOT = '/usr/share/nginx/html/static' 
-    MEDIA_ROOT = '/usr/share/nginx/html/media'
+#     SECRET_KEY = env('SECRET_KEY')
+#     ALLOWED_HOSTS = env.list('ALLOWED_HOSTS')
+#     STATIC_ROOT = '/usr/share/nginx/html/static' 
+#     MEDIA_ROOT = '/usr/share/nginx/html/media'
 
 # Application definition
 

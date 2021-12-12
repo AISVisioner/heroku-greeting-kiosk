@@ -18,10 +18,13 @@ from .base import *
 # SECURITY #
 ############
 
-DEBUG = True # bool(os.getenv('DJANGO_DEBUG', ''))
+DEBUG = False # bool(os.getenv('DJANGO_DEBUG', ''))
 
-# Set to your Domain here (eg. 'yourwebsite.com')
-ALLOWED_HOSTS = ['0.0.0.0', 'localhost', '127.0.0.1', 'greetingkiosk.herokuapp.com']
+if DEBUG:
+    ALLOWED_HOSTS = ['*']
+else:
+    # Set to your Domain here (eg. 'yourwebsite.com')
+    ALLOWED_HOSTS = ['0.0.0.0', 'localhost', '127.0.0.1', 'greetingkiosk.herokuapp.com']
 
 DATABASES = {
     'default': {
