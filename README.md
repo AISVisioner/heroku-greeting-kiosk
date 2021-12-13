@@ -1,3 +1,19 @@
+# How to execute this app?
+
+- ## set up .env file in home directory
+
+- ## upload images in face_upload/images/ folder
+```sh
+$ python face_upload/face_uploading.py
+```
+
+- ## execute kiosk app
+```sh
+$ python face_client/run.py
+```
+
+- ## access the home page to check visitors
+
 # Python: Getting Started
 
 A barebones Django app, which can easily be deployed to Heroku.
