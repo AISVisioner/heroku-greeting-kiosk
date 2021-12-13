@@ -17,8 +17,8 @@ https://v4.webpack.js.org/configuration/dev-server/
 */
 
 module.exports = {
-    publicPath: process.env.NODE_ENV === 'production' ? '/staticfiles/dist/' : 'http://127.0.0.1:8080',
-    outputDir: '../static/dist',
+    publicPath: process.env.NODE_ENV === 'production' ? '/staticfiles/' : 'http://127.0.0.1:8080',
+    outputDir: '../static',
     indexPath: '../../templates/index.html',
     pages: {
       index: {
