@@ -42,7 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'whitenoise.runserver_nostatic',
-    'django.contrib.staticfiles',
+    # 'django.contrib.staticfiles',
 
     'rest_framework',
     'rest_framework.authtoken',
