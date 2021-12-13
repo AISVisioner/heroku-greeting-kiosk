@@ -42,7 +42,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'whitenoise.runserver_nostatic',
-    # 'django.contrib.staticfiles',
 
     'rest_framework',
     'rest_framework.authtoken',
@@ -152,7 +151,7 @@ LOGOUT_REDIRECT_URL = "/accounts/login/" # /user after logout
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles') # The absolute path to the directory where collectstatic will collect static files for deployment.
+# STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles') # The absolute path to the directory where collectstatic will collect static files for deployment.
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
