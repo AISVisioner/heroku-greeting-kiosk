@@ -21,7 +21,7 @@ from .base import *
 DEBUG = True # bool(os.getenv('DJANGO_DEBUG', ''))
 
 # Set to your Domain here (eg. 'yourwebsite.com')
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'greetingkiosk.herokuapp.com']
 
 DATABASES = {
     'default': {
