@@ -4,7 +4,6 @@ import datetime
 from rest_framework import status, viewsets, permissions
 from rest_framework.response import Response
 from rest_framework.authentication import TokenAuthentication
-from lookup.api.permissions import DeleteForAdminOrSafeOnly
 from rest_framework.permissions import IsAdminUser, IsAuthenticated
 from lookup.models import Visitor
 from lookup.api.serializers import VisitorSerializer

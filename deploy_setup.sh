@@ -1,3 +1,4 @@
+source ./venv/bin/activation
 cd frontend
 npm install && npm run build
 cd ..
