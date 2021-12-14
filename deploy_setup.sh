@@ -6,6 +6,6 @@ cd ..
 rm -r staticfiles
 python3 manage.py collectstatic
 git add .
-git commit -m "imported dj_database_url in django settings"
+git commit -m "changed webpack path from static/dist/ to static/"
 git push heroku deploy_to_heroku:main
 heroku open
