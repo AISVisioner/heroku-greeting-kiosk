@@ -5,6 +5,11 @@
 $ python -m venv venv
 ```
 
+- ## activate the virtual environment
+```sh
+$ source venv/bin/activate
+```
+
 - ## install packages in requirements.txt
 ```sh
 $ pip install -r requirements.txt
