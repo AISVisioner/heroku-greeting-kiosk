@@ -147,6 +147,7 @@ LOGOUT_REDIRECT_URL = "/accounts/login/" # /user after logout
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
+STATIC_ROOT = "staticfiles" # The absolute path to the directory where collectstatic will collect static files for deployment.
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
@@ -156,7 +157,6 @@ STATICFILES_DIRS = [
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 
-# STATIC_ROOT = "" # The absolute path to the directory where collectstatic will collect static files for deployment.
 
 # Custom User Model
 AUTH_USER_MODEL = "users.CustomUser"
