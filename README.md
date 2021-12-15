@@ -1,5 +1,20 @@
 # How to execute this app?
 
+- ## create a virtual environment with python
+```sh
+$ python -m venv venv
+```
+
+- ## activate the virtual environment
+```sh
+$ source venv/bin/activate
+```
+
+- ## install packages in requirements.txt
+```sh
+$ pip install -r requirements.txt
+```
+
 - ## set up .env file in home directory
 
 - ## upload images in face_upload/images/ folder
