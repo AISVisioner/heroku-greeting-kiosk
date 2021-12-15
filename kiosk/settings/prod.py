@@ -18,7 +18,7 @@ from .base import *
 # SECURITY #
 ############
 
-DEBUG = True # bool(os.getenv('DJANGO_DEBUG', ''))
+DEBUG = False # bool(os.getenv('DJANGO_DEBUG', ''))
 
 if DEBUG:
     ALLOWED_HOSTS = ['*']
