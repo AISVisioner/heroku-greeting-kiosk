@@ -1,3 +1,34 @@
+# How to execute this app?
+
+- ## create a virtual environment with python
+```sh
+$ python -m venv venv
+```
+
+- ## activate the virtual environment
+```sh
+$ source venv/bin/activate
+```
+
+- ## install packages in requirements.txt
+```sh
+$ pip install -r requirements.txt
+```
+
+- ## set up .env file in home directory
+
+- ## upload images in face_upload/images/ folder
+```sh
+$ python face_upload/face_uploading.py
+```
+
+- ## execute kiosk app
+```sh
+$ python face_client/run.py
+```
+
+- ## access the home page to check visitors
+
 # Python: Getting Started
 
 A barebones Django app, which can easily be deployed to Heroku.
@@ -9,8 +40,8 @@ This application supports the [Getting Started with Python on Heroku](https://de
 Make sure you have Python 3.9.8 [installed in a virtual environment](https://docs.python-guide.org/starting/installation/). To push to Heroku, you'll need to install the [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli), as well as [Postgres](https://devcenter.heroku.com/articles/heroku-postgresql#local-setup).
 
 ```sh
-$ git clone https://github.com/heroku/python-getting-started.git
-$ cd python-getting-started
+$ git clone https://github.com/AISVisioner/heroku-greeting-kiosk.git
+$ cd heroku-greeting-kiosk
 
 $ python3 -m venv venv
 $ pip install -r requirements.txt
