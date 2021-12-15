@@ -17,3 +17,5 @@ opencv-python
 gunicorn
 whitenoise
 dj-database-url
+
+icecream

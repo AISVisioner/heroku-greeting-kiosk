@@ -5,6 +5,7 @@ import requests
 from glob import glob
 import cv2 as cv
 import face_recognition
+from icecream import ic
 from dotenv import load_dotenv
 load_dotenv()
 
